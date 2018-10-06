@@ -8,7 +8,7 @@
        
         {% load static %}   
         <link rel="stylesheet" href="{% static 'blog/js/csss.css' %}">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
     <link rel="script" href="{% static 'blog/css/js.js' %}">
     <script src="{% static 'blog/js/js.js' %}" type="text/javascript"></script>
@@ -45,10 +45,9 @@
               </table>
 </div>
 <div class="col-lg-8 col-md-8 col-sm-12"><br>
-        <h5  class="text"><p class="comma">❝</p>i'm nt here{{ quote.text }}<p class="comma text-danger">❞
-
-        </p></h5><br>
-        <h1 class="sayer">{{ quote.sayer }}</h1>
+        <h3 class="text-danger">❝</h3><h6 class="text">i'm nt here{{ quote.text }}</h6>
+        <h3 class="text-danger">❞</h3><br>
+        <h1 class="saidby" style="font-size:15px;margin:20px 0px 12px 0px;">~<b></b>{{ quote.sayer }}</h1>
         <div class="awesome"><i class="fa fa-camera"></i>
             <i class="fa fa-twitter"></i>
         <i class="fa fa-facebook-f"></i>
@@ -61,16 +60,22 @@
         {% endfor %}
       
         
-        <div style="background:white;width: 120%;height: 100px;"></div>
-        <div style="background:gray;width: 100%;height: 30px;"></div>
+        <div >
+                <footer>
 
-        <div class="row" id="backimg" style="background:gray;">
-        <div class="col-lg-3 col-md-3 col-sm-12 footer"></div>
-        <div class="col-lg-3 col-md-3 col-sm-12 footer">
-        <a class="navv-link" href="/feedback">Contact Us</a>
-        </div>    <div class="col-lg-3 col-md-3 col-sm-12 " id="footer"></div>
-        <div class="col-lg-3 col-md-3 col-sm-12 footer"></div>
-        
+                        <img src="https://bobbiblogger.files.wordpress.com/2014/03/words-make-you-who-you-are.jpg" class="polaroid polaroid--first">
+                      
+                        <img src="https://i.pinimg.com/originals/fd/90/bb/fd90bb0fbfcece64a166ac6421be9bfe.jpg" class="polaroid polaroid--second">
+                      
+                        <img src="https://i.pinimg.com/originals/b1/22/8c/b1228c86cdab3022c4d318ba0c9d4f1b.jpg" class="polaroid polaroid--third">
+                      
+                        <img src="https://i.pinimg.com/600x/c9/d0/95/c9d095d4169742fc180336b4c896c6f7.jpg" class="polaroid polaroid--fourth">
+                        
+                        <img src="https://pre00.deviantart.net/0473/th/pre/i/2010/116/a/e/all_the_world__s_a_stage_by_carrieola.jpg" class="polaroid polaroid--fifth">
+                      
+                        <img src="https://img00.deviantart.net/db39/i/2011/077/0/4/eager_hands_by_carrieola-d3byb09.jpg" class="polaroid polaroid--sixth">
+                      
+                      </footer>
         
         </div>
 

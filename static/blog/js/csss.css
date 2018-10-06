@@ -1,11 +1,30 @@
 body{
     background: red;
     overflow-x: hidden;
+    
+    animation: body .8s ease-in-out 1;
 }
+@keyframes body{
 
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+}
+.comma{
+
+font-size: 23px;
+
+
+}
+.text-danger{
+    display: inline;
+}
 .button{
     top:4%;
-    margin-left: 70%;
+    margin-left: 75%;
     width: 50px;
     height: 50px;
     transform: scale(1);
@@ -33,3 +52,96 @@ h6{
 .part34{
     transform: translateX(-33%);
 }
+part4{
+    padding-top: -56px;
+}
+
+
+
+footer {
+    position: relative;
+    height: 350px;
+    max-height: 350px;
+    overflow: hidden;
+  }
+  
+  .polaroid {
+    position: absolute;
+    width: 15%;
+    max-width: 250px;
+    min-width: 180px;
+    height: auto;
+    border: 20px solid #fff;
+    border-bottom: 60px solid #fff;
+    box-shadow: 0px 0px 10px #999;
+    z-index: 3;
+  }
+  .saidby{
+color: #999;
+font-size: 12px;
+  }
+
+  
+  .polaroid--first {
+    width: 18%;
+    max-width: 280px;
+    transform: rotate(10deg);
+    bottom: -140px;
+    left: -1%;
+  }
+  
+  .polaroid--second {
+    bottom: -100px;
+    transform: rotate(2deg);
+    left: 19%;
+  }
+  
+  .polaroid--third {
+    width: 18%;
+    max-width: 280px;
+    bottom: -160px;
+    transform: rotate(357deg);
+    left: 38%;
+  }
+  
+  .polaroid--fourth {
+    bottom: -160px;
+    transform: rotate(5deg);
+    left: 55%;
+  }
+  
+  .polaroid--fifth {
+    width: 20%;
+    max-width: 300px;
+    bottom: -170px;
+    transform: rotate(350deg);
+    left: 70%;
+    z-index: 2;
+  }
+  .fa-twitter{
+    transition: .3s;
+  } 
+  .fa-facebook-f{
+    transition: .3s;   
+  }
+
+  .fa-twitter:hover{
+    color: Crimson;
+  } 
+  .fa-facebook-f:hover{
+    color: Crimson;
+  }
+  .fa-camera{
+      transition: .3s;
+  }
+  .fa-camera:hover{
+     color: Crimson;
+  }
+  .polaroid--sixth {
+    width: 17%;
+    max-width: 250px;
+    bottom: -160px;
+    transform: rotate(5deg);
+    left: 91%;
+    z-index: 1;
+  }
