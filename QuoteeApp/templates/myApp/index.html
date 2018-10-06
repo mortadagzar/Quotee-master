@@ -47,7 +47,7 @@
 <div class="col-lg-8 col-md-8 col-sm-12"><br>
         <h3 class="text-danger">❝</h3><h6 class="text">i'm nt here{{ quote.text }}</h6>
         <h3 class="text-danger">❞</h3><br>
-        <h1 class="saidby" style="font-size:15px;margin:20px 0px 12px 0px;">~<b></b>{{ quote.sayer }}</h1>
+        <h1 class="saidby" style="font-size:15px;margin:20px 0px 12px 0px;">~<b></b>{{ quote.sayer }}, Posted by {{username}} at {{quote.date}}</h1>
         <div class="awesome"><i class="fa fa-camera"></i>
             <i class="fa fa-twitter"></i>
         <i class="fa fa-facebook-f"></i>
@@ -89,6 +89,7 @@
 
     
 </html>
+
 <style>
 body{
     overflow-x: hidden;
