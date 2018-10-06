@@ -1,0 +1,88 @@
+
+
+{% extends 'myApp/header.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+       
+        {% load static %}   
+        <link rel="stylesheet" href="{% static 'blog/js/csss.css' %}">
+
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+    <link rel="script" href="{% static 'blog/css/js.js' %}">
+    <script src="{% static 'blog/js/js.js' %}" type="text/javascript"></script>
+    
+     <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+     <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quotee ||  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <script src="main.js"></script>
+</head>
+<body>
+        {% load static %}
+
+        {% for quote in quotes %}
+        
+    <div class="quote" id="quote">
+
+        
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-12" style="">
+         <table id="wrapper">
+                 <tr>
+                  <td>        <img id="imgd" class="img-thumbnail img-responsive" src="{{quote.image.url}}" alt="image" class="">
+                  </td>
+                </tr>
+              </table>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12"><br>
+        <h5  class="text"><p class="comma">❝</p>i'm nt here{{ quote.text }}<p class="comma text-danger">❞
+
+        </p></h5><br>
+        <h1 class="sayer">{{ quote.sayer }}</h1>
+        <div class="awesome"><i class="fa fa-camera"></i>
+            <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook-f"></i>
+        </div>
+</div>
+   
+
+    </div>
+    </div> 
+        {% endfor %}
+      
+        
+        <div style="background:white;width: 120%;height: 100px;"></div>
+        <div style="background:gray;width: 100%;height: 30px;"></div>
+
+        <div class="row" id="backimg" style="background:gray;">
+        <div class="col-lg-3 col-md-3 col-sm-12 footer"></div>
+        <div class="col-lg-3 col-md-3 col-sm-12 footer">
+        <a class="navv-link" href="/feedback">Contact Us</a>
+        </div>    <div class="col-lg-3 col-md-3 col-sm-12 " id="footer"></div>
+        <div class="col-lg-3 col-md-3 col-sm-12 footer"></div>
+        
+        
+        </div>
+
+
+
+
+
+
+</body>
+
+
+    
+</html>
+
+{% endblock %}

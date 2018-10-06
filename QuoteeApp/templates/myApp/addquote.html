@@ -1,0 +1,161 @@
+{% extends 'myApp/header.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add a Quote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+  
+
+
+
+
+
+
+   
+       
+  
+                <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12"></div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+
+        <div style=" margin: auto;
+        width: 80%;
+        
+        padding: 10px;">
+     <form method="POST" action="Quote" class="form-group" enctype="multipart/form-data">
+            {% csrf_token %}
+           
+        
+               
+           <textarea rows="9" cols="50" id="id_text" name="text" placeholder="❝                                               ❞"></textarea>
+           <h6 style="color:gray;">{{ form.sayer.errors }}</h6>
+                <input type="text" id="id_sayer" name="sayer" placeholder="Said by.. . .">
+          
+                <h6 style="color:gray;">{{ form.text.errors }}</h6>
+                <label class="custom-file-upload">  his/her photo<input type="file" id="id_image" name="image" value="his/her photo"></label>
+                <h6 style="color:gray;">{{ form.image.errors }}</h6>
+                <input class="submit" type="submit"  name="Quote!" value="Quote!">
+        </form>
+</div>
+    
+
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12"></div>
+</div> 
+        
+          
+          
+             
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<style>
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding:  7px;
+    color: #ccc;
+    cursor: pointer;
+    border-radius: 7px;
+}
+textarea {
+display: block;
+width: 100%;
+margin-bottom: 1rem;
+padding: 0.25rem;
+font-size: 1rem;
+color: rgba(0, 0, 0, 1);
+border-color: gray;
+border-top-width:0;
+border-left-width: 0;
+border-right-width: 0;
+
+outline: 0;
+background-color: white;
+transition: 0.2s ease-in-out;
+transition-property: background-color, box-shadow;}
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+font-size: 70px;
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+        font-size: 70px;
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+        font-size: 70px;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+        font-size: 70px;
+}
+input{
+       
+display: block;
+width: 100%;
+margin-bottom: 1rem;
+padding: 0.25rem;
+font-size: 1rem;
+color: rgba(0, 0, 0, 1);
+border-color: gray;
+border-top-width:0;
+border-left-width: 0;
+border-right-width: 0;
+
+outline: 0;
+background-color: white;
+transition: 0.2s ease-in-out;
+transition-property: background-color, box-shadow;}
+ 
+                      
+              
+.signuph{
+
+font-size: 23px;
+color: gray;
+}
+                
+ .submit{
+
+  margin-top: 12px;
+  width: 100%;
+  height: 39px;
+  background: #e63900;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+padding: 12px 0px 33px 0px;
+
+
+
+ }               
+  body{
+ background-image: url("paper.gif");
+
+  max-width: 100%;
+    overflow-x: hidden;
+
+  }              
+</style>
+{% endblock %}

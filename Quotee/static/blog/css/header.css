@@ -1,0 +1,147 @@
+
+
+p{
+color:red;
+font-size: 2px;
+
+}
+.circle{
+   
+border-radius: 50%;
+transform: translateX(17%);
+width: 65px;
+height: 65px;
+
+
+color: white;
+min-width: 14px;
+padding: 4px 3px 0 3px;
+text-align: center;
+ 
+}
+ .fa-plus{
+color: white;
+font-size: 83px; 
+
+animation: commentfont 1s linear  infinite alternate;   
+}
+@keyframes commentfont {
+    0%   {transform: rotate(0deg);}
+  
+    100% {transform: rotate(180deg);}   
+}
+
+.part3{
+   
+    color: white;
+    font-size: 45px;
+  
+      
+      
+      font-family: 'Audiowide', cursive; 
+      padding-top: -5px;
+      z-index: 999;
+    }
+    .part4{
+        font-family: 'Special Elite', cursive;
+    padding-left: -40px;
+    padding-top: 12px;
+    color: white;
+    font-size: 12px;
+
+         
+        
+          
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    font-size:33px;
+}
+
+
+
+svg {
+    top: -56px;
+    margin: 2rem;
+    position: relative;
+  }
+.logo{
+    top: -43px;
+position: absolute;
+    font-family: Audiowide;
+ 
+    color: white;
+}
+  
+  #turtle {
+    animation: turtle-swing 4s infinite alternate ease;
+  }
+  
+  #paws {
+     animation: paw-swing 1s infinite alternate ease;
+  transform-origin: 50% 50%;
+    transform: translate(0, 10px);
+  }
+  
+  @keyframes turtle-swing {
+    0% {
+      transform-origin: 50% 50%;
+      transform: scale(0.9) rotate(-3deg);
+      
+    }
+    
+    50% {
+      transform-origin: 50% 50%;
+      transform: scale(0.9) rotate(4deg);
+  
+    }
+    
+  
+    100% {
+      transform-origin: 50% 50%;
+      transform: scale(0.9) rotate(0deg);
+  
+    }
+   
+  }
+  
+  
+ 
+    
+    85% {
+  
+      transform: scale(0.9) rotate(-8deg) translate(0, 4px);
+      
+    }
+    
+  
+    100% {
+  
+      transform: scale(0.9) rotate(5deg) translate(0, 2px);
+  
+    }
+   
+  }
+
+  
+
+  
+  

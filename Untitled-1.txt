@@ -1,0 +1,16 @@
+
+<div class="row header">
+  <div class="col-lg-2 col-md-2 col-sm-12">
+    <div class="circle"></div>
+  </div>
+<div class=" col-lg-10 col-md-10 col-sm-5 "><a href="/"><p class="bg-danger" style="">QUOtee❞ </p> </a></div>
+
+
+
+
+
+
+
+  <a href="/"><p class="logo" style="">QUOtee❞ </p> </a>
+
+  font-family: 'Audiowide', cursive;

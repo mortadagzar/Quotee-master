@@ -1,0 +1,75 @@
+{% extends 'myApp/header.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+      
+        {% load static %}   
+
+<link rel="stylesheet" href="{% static 'blog/css/signup.css' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="main.js"></script>
+</head>
+<body>
+  <div class="row">
+<div class="col-lg-4 col-md-4 col-sm-12"></div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+
+<div class="login">
+
+     {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+
+   
+<div class="login">
+     
+<div style=" margin: auto;
+
+padding: 10px;">
+{{ form.non_field_errors }}
+
+ <div id="login-box">
+       
+        <div class="left">
+          <h1 class="signuph">Sign up</h1>
+          <form action="register" method="post" class="form-group">
+           {% csrf_token %}
+          <input type="text" id="id_username" name="username"  placeholder="Username">
+          <p class="error">{{ form.username.errors }}</p>
+          <input type="text" name="email" placeholder="E-mail" id="id_email"/>
+          <p class="error" >{{ form.email.errors }}</p>    
+            <input type="password" name="password1" placeholder="Password" id="id_password2"/>
+            <p class="error">{{ form.password1.errors }}</p>
+          <input type="password" name="password2" placeholder="Retype password" id="id_password2" />
+          <p class="error">{{ form.password2.errors }}</p>
+          <input type="submit" name="signup_submit" value="Sign me up" />
+        </form>
+        </div>
+    
+
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12"></div>
+</div>
+ 
+
+
+
+</body>
+</html>
+
+
+
+{% endblock %}
