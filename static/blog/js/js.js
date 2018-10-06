@@ -1,3 +1,8 @@
 
-  
-      
+  window.scroll({
+   
+    behavior: 'smooth' 
+  });
+
+
+   
