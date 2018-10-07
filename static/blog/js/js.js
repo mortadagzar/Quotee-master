@@ -1,24 +1,30 @@
-
-  window.scroll({
+$(function(){
+    var $elems = $('.tto');
+    var winheight = $(window).height();
+    var fullheight = $(document).height();
    
-    behavior: 'smooth' 
-  });
+    $(window).scroll(function(){
+      animate_elems();
+    });
+  
 
-
-  $(window).scroll(function() {
+  function animate_elems() {
+    wintop = $(window).scrollTop(); // calculate distance from top of window
  
-    if ($(this).scrollTop()>50)
-     {
-        $('.button-out').stop().animate({ // menu goes out
-            marginLeft:' 79%',
-            transform:' scale(1.2)',
-           
-            
-        });
+    // loop through each item to check when it animates
+    $elems.each(function(){
+        $elm = $(this);
+ 
+ 
+      topcoords = $elm.offset().top; // element's distance from top of page in pixels
+ 
+      if(wintop<topcoords) {
+        // animate when top of the window is 3/4 above the element
+        $elm.animate({
 
-    
-     }
-    
-     
-
- });
+            opacity:1, 
+        })
+      }
+    });
+  } // end animate_elems()
+});

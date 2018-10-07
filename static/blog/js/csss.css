@@ -141,7 +141,30 @@ font-size: 12px;
   .fa-facebook-f{
     transition: .3s;   
   }
+  .awesome{
+    text-align: center;
+    margin: auto;
+    width: 96%;
+    
+    padding: 10px;
 
+
+}
+.tto{
+    opacity:0;
+}
+  .material-icons{
+    transition: .3s;     
+  }
+  .material-icons{
+      z-index: 678;
+    color: lightgrey;
+    padding:12px 12px 0px 12px;
+    font-size: 23px;    
+  }
+  .material-icons:hover{
+    color: Crimson;
+  } 
   .fa-twitter:hover{
     color: Crimson;
   } 

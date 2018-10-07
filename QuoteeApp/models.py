@@ -15,6 +15,7 @@ class input_quote(models.Model):
     sayer = models.CharField(max_length=40)
     date = models.DateTimeField(auto_now_add=True)
     image=models.ImageField(blank=True,null=False)
+  
 
 
 class Feedback(models.Model):
