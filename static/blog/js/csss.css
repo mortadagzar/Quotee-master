@@ -33,6 +33,12 @@ font-size: 23px;
 .text-danger{
     display: inline;
 }
+
+.header{
+  
+}
+
+
 .button{
     top:4%;
     margin-left: 75%;
@@ -42,7 +48,7 @@ font-size: 23px;
     position: fixed;
     background: dimgray;
   border: none;
-  color: white;
+  color:  goldenrod;
  transition: 0.4s;
   text-align: center;
    border-radius: 50%;  
