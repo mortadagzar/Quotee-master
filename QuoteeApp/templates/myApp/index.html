@@ -31,14 +31,14 @@
 </head>
 <body>
         {% load static %}
-
+        <div  >
         {% for quote in quotes %}
         
     <div  id="quote" class="quote">
 
         
-<div class="row">
-<div class="col-lg-4 col-md-4 col-sm-12 tto" style="">
+<div class="row quoteb">
+<div class="col-lg-4 col-md-4 col-sm-12 " style="">
          <table id="wrapper">
                  <tr>
                   <td>        <img id="imgd" class="img-thumbnail img-responsive" src="{{quote.image.url}}" alt="image" class="">
@@ -67,7 +67,7 @@
     </div> 
         {% endfor %}
       
-        
+        </div>
         <div >
                 <footer>
 
